@@ -17,6 +17,24 @@ It should now be globally available by invoking `pypad` in the command line.
 
 Call `pypad` in the command line and it should start up. Type `exit()` or ctrl-d to exit.
 
+The imported modules are:
+
+#### Builtins
+
+- `re`: This module provides regular expression matching operations similar to those found in Perl
+- `Pathlib`'s `Path`: PurePath subclass that can make system calls.
+- `os`: OS routines for NT or Posix depending on what system we're on
+ 
+#### Third Party
+
+- `Numpy` as `np`: Provides an array object of arbitrary homogeneous items,fast mathematical operations over arrays and Linear Algebra, Fourier Transforms, Random Number Generation
+- `Pandas` as `pd`: A package providing fast, flexible, and expressive data structures designed to make working with "relational" or "labeled" data both easy and intuitive
+- `Matplotlib` as `plt`: A state-based interface to matplotlib. It provides an implicit, MATLAB-like, way of plotting. It also opens figures on your screen, and acts as the figure GUI manager
+
+#### Optional
+
+- `-w` or `--wordlist` will read from `clean_dictionary.txt` and store the list of words in a list called `words`.
+
 ## Modification
 
 Fork this repo and add/remove whatever modules you want from `/src/pypad/__init__.py`.
