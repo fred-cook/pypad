@@ -1,7 +1,9 @@
 
 # PyPad
 
-PyPad is an Ipython based Read Evaluate Print Loop (REPL) with commonly used modules already loaded, as I found myself forever typing `import numpy as np` etc... when trying to test out methods.
+PyPad is a python scratch pad to quickly write and test python functions/classes with useful modules already imported and ready for use, as I found myself forever typing `import numpy as np` etc...
+
+It uses Ipython which has excellent autocomplete tooling built in, along with many other cool/useful [features](https://ipython.readthedocs.io/en/stable/interactive/reference.html#)
 
 ## Installation
 
@@ -9,7 +11,7 @@ I got this idea from a great [article](https://www.bitecode.dev/p/uv-tricks) on 
 
 1. Make sure you have [UV](https://docs.astral.sh/uv/getting-started/installation/) installed
 2. Clone this repo and `cd` into it
-3. Run `Run uv tool install . -e`
+3. Run `uv tool install . -e`
 
 It should now be globally available by invoking `pypad` in the command line.
 
@@ -21,15 +23,15 @@ The imported modules are:
 
 #### Builtins
 
-- `re`: This module provides regular expression matching operations similar to those found in Perl
-- `Pathlib`'s `Path`: PurePath subclass that can make system calls.
-- `os`: OS routines for NT or Posix depending on what system we're on
+- `re`: Regular expression operations.
+- `pathlib.Path` as `Path`: Object-oriented filesystem paths.
+- `os`: Operating system routines for file and environment management.
  
 #### Third Party
 
-- `Numpy` as `np`: Provides an array object of arbitrary homogeneous items,fast mathematical operations over arrays and Linear Algebra, Fourier Transforms, Random Number Generation
-- `Pandas` as `pd`: A package providing fast, flexible, and expressive data structures designed to make working with "relational" or "labeled" data both easy and intuitive
-- `Matplotlib` as `plt`: A state-based interface to matplotlib. It provides an implicit, MATLAB-like, way of plotting. It also opens figures on your screen, and acts as the figure GUI manager
+- `numpy` as `np`: Fast array operations, linear algebra, random number generation, and more.
+- `pandas` as `pd`: High-performance data structures for labeled or relational data.
+- `matplotlib.pyplot` as `plt`: MATLAB-like plotting interface; opens interactive figures.
 
 #### Optional
 
