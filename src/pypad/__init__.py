@@ -59,10 +59,10 @@ def main():
     parser = argparse.ArgumentParser(
         description="Launch IPython REPL with NumPy, Matplolib and Pandas imported."
     )
-    # Accept both -w and -wordlist (the user asked for single-dash -wordlist)
+    # Accept both -w and --wordlist
     parser.add_argument(
         "-w",
-        "-wordlist",
+        "--wordlist",
         action="store_true",
         dest="wordlist",
         help="Load words from src/assets/clean_dictionary.txt into the REPL as `words`",
@@ -84,14 +84,12 @@ def main():
             print(f"Error loading wordlist: {e} — starting without `words`.")
             words = []
 
-    # keep existing behavior (assumes print_lad is defined elsewhere)
     print_lad()
     print(
         f"Launching IPython with numpy {np.__version__}, pandas {pd.__version__}, matplotlib"
     )
 
-    # Pass the current locals() so `words` (if defined) is available inside the REPL
-    embed(user_ns=locals())
+    embed()
 
 
 if __name__ == "__main__":
