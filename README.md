@@ -5,6 +5,8 @@ PyPad is a python scratch pad to quickly write and test python functions/classes
 
 It uses Ipython which has excellent autocomplete tooling built in, along with many other cool/useful [features](https://ipython.readthedocs.io/en/stable/interactive/reference.html#)
 
+![example gif of pypad starting](https://s14.gifyu.com/images/bw8HK.gif)
+
 ## Installation
 
 I got this idea from a great [article](https://www.bitecode.dev/p/uv-tricks) on UV tips by [bitecode](https://www.bitecode.dev/)
